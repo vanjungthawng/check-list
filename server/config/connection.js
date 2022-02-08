@@ -9,5 +9,3 @@ mongoose.connect(
     useFindAndModify: true,
   }
 );
-
-module.exports = mongoose.connection;
