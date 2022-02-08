@@ -1,3 +1,4 @@
+const mongoose = require("mongoose");
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/deep-thoughts",
   {
@@ -7,3 +8,5 @@ mongoose.connect(
     useFindAndModify: false,
   }
 );
+
+module.exports = mongoose.connection;
