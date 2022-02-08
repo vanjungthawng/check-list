@@ -1,0 +1,31 @@
+{
+  "name": "check-list",
+  "version": "1.0.0",
+  "description": "An app that can track current show watch status",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "cd server && npm start",
+    "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i"
+  },
+  "keywords": [],
+  "author": "Van",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/core": "^0.7.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "aws-sdk": "^2.673.0",
+    "bcrypt": "^4.0.1",
+    "emotion-theming": "^10.0.27",
+    "if-env": "^1.0.4",
+    "install": "^0.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "npm": "^6.14.5",
+    "react-icons": "^3.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
