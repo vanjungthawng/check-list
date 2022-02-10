@@ -33,7 +33,7 @@ A full stack MERN (MongoDB, Express, React, Node.js) app made using Create React
 
 ## Deployed Link
 
-[Click Here!](https://van-check-list.herokuapp.com/)
+[Click Here!](https://afternoon-dawn-85558.herokuapp.com/)
 
 ## Contact
 
